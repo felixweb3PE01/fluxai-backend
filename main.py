@@ -2,6 +2,9 @@ import os
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 import google.generativeai as genai
+# Note: You don't strictly need 'types' unless you are doing advanced config, 
+# but keeping it doesn't hurt.
+from google.generativeai import types 
 from dotenv import load_dotenv
 
 load_dotenv()
